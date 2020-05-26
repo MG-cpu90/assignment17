@@ -37,7 +37,7 @@ THEN I can add new exercises to a new workout plan.
 
 GIVEN I am a user,
 WHEN I view the 'stats' page,
-THEN I view the combined wight of multiple exercises.
+THEN I view the combined weight of multiple exercises.
 - - -
 
 ## Submission on BCS
