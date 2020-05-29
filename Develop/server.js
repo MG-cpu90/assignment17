@@ -1,11 +1,19 @@
 const express = require("express");
 const logger = require("morgan");
 const mongoose = require("mongoose");
+// const mongojs = require("mongojs");
 
 const PORT = process.env.PORT || 3000;
 
 const Workout = require("./models/workout.js");
+// const db = require("./models");
+
 const app = express();
+
+// const databaseUrl = process.env.MONGODB_URI || "exercisedb";
+// const collections = ["notes"];
+
+// const db = mongojs(databaseUrl, collections);
 
 app.use(logger("dev"));
 
@@ -14,7 +22,7 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/exercisedb", { 
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", { 
     useNewUrlParser: true,
     useFindAndModify: false
 });
