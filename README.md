@@ -40,6 +40,15 @@ WHEN I view the 'stats' page,
 THEN I view the combined weight of multiple exercises.
 - - -
 
+## Usage
+
+* In order to run the application, clone the GitHub repository to your local device
+* Then, run "npm install" in the terminal window inside the project root directory
+* In another terminal window, open MondoGB by running "mongo" or "mongod"
+* Once the packages have been installed, run the "server.js" file"
+* Finally, navigate to http://localhost:3000/ in order to view the application
+
+
 ## Submission on BCS
 
 * The URL to the deployed application:
